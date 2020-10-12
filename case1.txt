@@ -1,0 +1,10 @@
+//File 1 located in miradi-client/source/org
+//File 2 located in miradi-client/source/org/miradi/main
+
+ID:01
+
+Driver:testFiles.Java
+
+Input: File1, File2
+
+Expected Output: True

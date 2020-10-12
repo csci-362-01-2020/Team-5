@@ -1,0 +1,9 @@
+//Create a file named "testFile"
+
+ID:04
+
+Driver:testRename.Java
+
+Input: testFile, fileNewName, 1
+
+Expected Output: fileNewName

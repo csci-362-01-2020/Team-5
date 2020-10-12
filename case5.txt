@@ -1,0 +1,9 @@
+//File Located in miradi-client/source/org/miradi/actions/
+
+ID:05
+
+Driver:testChildren.Java
+
+Input: miradi-client/source/org/miradi/actions/
+
+Expected Output: children = {[directory, jump], [directory, openstandards], [directory, views]]

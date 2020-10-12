@@ -1,0 +1,10 @@
+//Create a hashmap using the BiDirectionalHashMap() class
+//hashmap = {a=1, b=2, c=3, d=4, e=5,...etc}
+
+ID:03
+
+Driver:testReverseHash.Java
+
+Input: hashap
+
+Expected Output: {1=a, 2=b, 3=c, 4=d, 5=e,...etc}
