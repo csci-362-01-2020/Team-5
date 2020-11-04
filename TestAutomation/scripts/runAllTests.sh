@@ -27,15 +27,16 @@ space=" "
 pathToTemp="../temp/"
 outputFile=$pathToTemp$outFile
 args=$inputs$space$oracle$space$outputFile
+testJava="$testExec.java"
 
 
 cd ../testCaseExecutables
 
 #javac -d . FloatingPointFormatter.java OptionalDouble.java TestAdd.java
 
-javac -d . FloatingPointFormatter.java OptionalDouble.java "$testExec"
+javac -d . FloatingPointFormatter.java OptionalDouble.java "$testJava"
 
-java org.miradi.utils.TestAdd "$args"
+java org.miradi.utils."$testExec" "$args"
 
 
 
@@ -51,10 +52,12 @@ $req
 Method tested: $meth
 Inputs: $inputs
 Expected Output: $oracle
-Actual Output: $output" >> ../reports/report.txt
+Actual Output: $output
+" >> ../reports/report.txt
 
 done
 
+cat ../reports/report.txt
 
 
 	
