@@ -1,7 +1,0 @@
-6
-Test if subtract() Method returns expected result for a smaller positive double subtracted from a larger positive double
-public OptionalDouble subtract(OptionalDouble optionalDoubleToAdd)
-5.7 3.6
-2.1
-test6Output.txt
-TestSubtract
