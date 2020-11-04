@@ -1,0 +1,16 @@
+This Method will remove the last character in a given string input.
+StringUtilities
+removeLastChar
+02
+
+TestRemove.java
+8
+"", error    *NOT sure if we are supposed to include something like this for this example
+1234,123
+LkwmSoe, LkwmSo
+AAAAA, AAAA
+Hello!, Hello
+@!*%', @!*%
+snakes, snake
+a, ""
+end
