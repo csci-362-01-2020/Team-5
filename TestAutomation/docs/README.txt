@@ -6,4 +6,4 @@ Method being tested
 Input1 Input2 ...
 Expected Output
 Output File Name
-Test Executable File Name (i.e. TestAdd.java)
+Test Executable File Name but without .java (i.e. "TestAdd")
