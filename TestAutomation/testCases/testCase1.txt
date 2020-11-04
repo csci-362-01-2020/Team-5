@@ -1,0 +1,7 @@
+1
+Test if add() Method returns expected result for two positive doubles with no value after decimal
+public OptionalDouble add(OptionalDouble optionalDoubleToAdd)
+2.0 3.0
+5.0
+test1Output.txt
+TestAdd.java
