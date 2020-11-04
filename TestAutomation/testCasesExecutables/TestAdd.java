@@ -15,7 +15,7 @@ public class TestAdd {
 	
 		double valueOfDouble = Double.valueOf(args[0]);
 		double valueToAdd = Double.valueOf(args[1]);
-		OptionalDouble oracle = OptionalDouble(Double.valueOf(args[2]);
+		OptionalDouble oracle = OptionalDouble(Double.valueOf(args[2]));
 		String outFile = "../temp/" + args[3];
 		
 		
