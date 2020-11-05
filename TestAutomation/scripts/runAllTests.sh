@@ -3,7 +3,7 @@
 #create different parts of html template for easy formatting
 html="<!DOCTYPE html>
 <html><meta charset="utf-8"><head>
-<style>body{background-color: darkred; color: lightgreen}h3{color: green; background-color: black; text-decoration: underline;}table, th, td{text-align: center; vertical-align: middle; width: 50%; border-collapse: collapse; border: 2px solid black;}</style>
+<style>body{background-color: darkred; color: lightgreen} th{color: black; text-decoration: underline;} table, th, td{text-align: center; vertical-align: middle; width: 50%; border-collapse: collapse; border: 2px solid black;}</style>
 <title>Test Cases</title></head><body><table><h3><tr><th>Test Num</th><th>Req</th><th>Method Tested</th><th>Inputs</th><th>Expected Outputs</th><th>Actual Output</th></h3></tr>"
 
 #iterate through each testCase file
