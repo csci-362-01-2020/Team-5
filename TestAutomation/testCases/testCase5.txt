@@ -1,0 +1,7 @@
+5
+Test if add() Method returns expected result for a positive double and a small double 
+public OptionalDouble add(OptionalDouble optionalDoubleToAdd)
+7.0 -5.6
+1.4
+test5Output.txt
+TestAdd
