@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #create different parts of html template for easy formatting
-html='<!DOCTYPE html><html><meta charset="utf-8"><head><style>body{background-color: green;}h3{color: white;}h4{color: blue}p{color: darkred;}</style><title>Test Cases</title></head><p>'
+html='<!DOCTYPE html><html><meta charset="utf-8"><head><style>body{background-color: darkred;}h3{color: green; text-decoration: underline;}h4{color: lightgreen}p{color: yellow;}</style><title>Test Cases</title></head><p>'
 
 #iterate through each testCase file
 for testCase in ../testCases/*
