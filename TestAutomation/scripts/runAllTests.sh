@@ -1,7 +1,10 @@
 #!/bin/sh
 
 #create different parts of html template for easy formatting
-html='<!DOCTYPE html><html><meta charset="utf-8"><head><style>body{background-color: darkred;}h3{color: green; background-color: black; text-decoration: underline;}h4{color: lightgreen}p{color: yellow;}</style><title>Test Cases</title></head><body>'
+html="<!DOCTYPE html>
+<html><meta charset="utf-8"><head>
+<style>body{background-color: darkred; color: lightgreen}h3{color: green; background-color: black; text-decoration: underline;}table, th, td{text-align: center; vertical-align: middle; width: 50%; border-collapse: collapse; border: 2px solid black;}</style>
+<title>Test Cases</title></head><body><table><h3><tr><th>Test Num</th><th>Req</th><th>Method Tested</th><th>Inputs</th><th>Expected Outputs</th><th>Actual Output</th></h3></tr>"
 
 #iterate through each testCase file
 for testCase in ../testCases/*
@@ -51,8 +54,8 @@ read -r output<$outputFile
 #output=$out
 
 #adds formatted version of the test output to the html file
-currentTest="<h3>Test Num: $testNum</h3><h4>$req</h4><p><br>Method tested: $meth<br>Inputs: $inputs<br>Expected Output: $oracle<br> Actual Output: $output<br></p>"
-html="$html$currentTest<br>"
+html="$html<tr><td>$testNum</td><td>$req</td><td>$meth</td><td>$inputs</td><td>$oracle</td><td>$output</td></tr>"
+#html= "$html$currentTest"
 
 #previous code for creating a text file
 #echo "Test Num: $testNum
@@ -65,7 +68,7 @@ html="$html$currentTest<br>"
 
 done
 #adds closing html tag and stores it all in report.html
-echo "$html</body></html>" > report.html
+echo "$html</table></body></html>" > report.html
 
 xdg-open report.html
 cat ../reports/report.html
