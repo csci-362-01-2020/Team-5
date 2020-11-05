@@ -65,6 +65,6 @@ html="$html$currentTest<br>"
 done
 echo "$html</html>" > report.html
 
-firefox report.html
+xdg-open report.html
 cat ../reports/report.html
 #cat ../reports/report.txt
