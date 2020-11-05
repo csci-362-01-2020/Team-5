@@ -50,6 +50,7 @@ read -r output<$outputFile
 #output=$(head -n 1 outputFile)
 #output=$out
 
+#adds formatted version of the test output to the html file
 currentTest="<h3>Test Num: $testNum</h3><h4>$req</h4><p><br>Method tested: $meth<br>Inputs: $inputs<br>Expected Output: $oracle<br> Actual Output: $output<br></p>"
 html="$html$currentTest<br>"
 
@@ -63,6 +64,7 @@ html="$html$currentTest<br>"
 #" >> ../reports/report.txt
 
 done
+#adds closing html tag and stores it all in report.html
 echo "$html</html>" > report.html
 
 xdg-open report.html
