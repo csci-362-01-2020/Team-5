@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #create different parts of html template for easy formatting
-html='<!DOCTYPE html><html><meta charset="utf-8"><head><style>body{background-color: darkred;}h3{color: green; text-decoration: underline;}h4{color: lightgreen}p{color: yellow;}</style><title>Test Cases</title></head><p>'
+html='<!DOCTYPE html><html><meta charset="utf-8"><head><style>body{background-color: darkred;}h3{color: green; background-color: black; text-decoration: underline;}h4{color: lightgreen}p{color: yellow;}</style><title>Test Cases</title></head><body>'
 
 #iterate through each testCase file
 for testCase in ../testCases/*
@@ -65,7 +65,7 @@ html="$html$currentTest<br>"
 
 done
 #adds closing html tag and stores it all in report.html
-echo "$html</html>" > report.html
+echo "$html</body></html>" > report.html
 
 xdg-open report.html
 cat ../reports/report.html
