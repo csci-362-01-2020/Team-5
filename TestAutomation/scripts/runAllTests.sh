@@ -53,7 +53,7 @@ read -r output<$outputFile
 currentTest="<h3>Test Num: $testNum</h3><h4>$req</h4><p><br>Method tested: $meth<br>Inputs: $inputs<br>Expected Output: $oracle<br> Actual Output: $output<br></p>"
 html="$html$currentTest<br>"
 
-
+#previous code for creating a text file
 #echo "Test Num: $testNum
 #$req
 #Method tested: $meth
