@@ -1,5 +1,8 @@
 #!/bin/sh
 
+#create different parts of html template for easy formatting
+html='<!DOCTYPE html><html><meta charset="utf-8"><head><style>body{background-color: green;}h3{color: white;}h4{color: blue}p{color: darkred;}</style><title>Test Cases</title></head><p>'
+
 #iterate through each testCase file
 for testCase in ../testCases/*
 do
@@ -47,17 +50,21 @@ read -r output<$outputFile
 #output=$(head -n 1 outputFile)
 #output=$out
 
-echo "Test Num: $testNum
-$req
-Method tested: $meth
-Inputs: $inputs
-Expected Output: $oracle
-Actual Output: $output
-" >> ../reports/report.txt
+currentTest="<h3>Test Num: $testNum</h3><h4>$req</h4><p><br>Method tested: $meth<br>Inputs: $inputs<br>Expected Output: $oracle<br> Actual Output: $output<br></p>"
+html="$html$currentTest<br>"
+
+
+#echo "Test Num: $testNum
+#$req
+#Method tested: $meth
+#Inputs: $inputs
+#Expected Output: $oracle
+#Actual Output: $output
+#" >> ../reports/report.txt
 
 done
+echo "$html</html>" > report.html
 
-cat ../reports/report.txt
-
-
-	
+firefox report.html
+cat ../reports/report.html
+#cat ../reports/report.txt
