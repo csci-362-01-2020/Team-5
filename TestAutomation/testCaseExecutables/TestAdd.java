@@ -15,19 +15,16 @@ public class TestAdd {
 	public static void main(String[] args) {
 		
 		args = args[0].split(" ");
-		//System.out.println(args[0]);
 		double valueOfDouble = Double.valueOf(args[0]);
 		double valueToAdd = Double.valueOf(args[1]);
 		OptionalDouble oracle = new OptionalDouble(Double.valueOf(args[2]));
-		String outFile = args[3];
-		//System.out.println(outFile);
+		
 		
 		OptionalDouble oD = new OptionalDouble(valueOfDouble);
 		OptionalDouble oDToAdd = new OptionalDouble(valueToAdd);
 		
 		OptionalDouble sum = oD.add(oDToAdd);
 		double sumValue = sum.getValue();
-		//String pass = (oracle.getValue() == sumValue) ? "Passed" : "Failed";
 		String pass = (oracle.equals(sum)) ? "Passed" : "Failed";
 		
 		

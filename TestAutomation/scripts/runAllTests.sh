@@ -34,31 +34,17 @@ req=${arr[1]}
 meth=${arr[2]}
 inputs=${arr[3]}
 oracle=${arr[4]}
-outFile=${arr[5]}
-testExec=${arr[6]}
+#outFile=${arr[5]}
+testExec=${arr[5]}
 
 space=" "
 
-
-pathToTemp="../temp/"
-outputFile=$pathToTemp$outFile
 args=$inputs$space$oracle$space$outputFile
 testJava="$testExec.java"
 
 
-#cd ../testCaseExecutables
-
-#javac -d . FloatingPointFormatter.java OptionalDouble.java TestAdd.java
-
 #compile and run test executable
 javac -d . "$testJava"
-
-#set output = java org.miradi.utils."$testExec" "$args" #pipes output to output variable
-
-#echo $output
-
-#{ read -d '\n' output; }< <(java org.miradi.utils."$testExec" "$args")
-
 
 #reads test executable output into variable in format "{Actual Output};{Test Result}"
 { read javaOut; }< <(java org.miradi.utils."$testExec" "$args")
@@ -70,19 +56,10 @@ read -a outputArray <<< "$javaOut"
 output=${outputArray[0]}
 pass=${outputArray[1]}
 
-#echo "$pass"
-
-
-
-#echo "Current dir: $PWD"
-
-#read -r output<$outputFile
-
-
 
 #adds formatted version of the test output to the html file
 html="$html<tr><td>$testNum</td><td>$req</td><td>$meth</td><td>$inputs</td><td>$oracle</td><td>$output</td><td>$pass</td></tr>"
-#html= "$html$currentTest"
+
 
 
 
@@ -91,5 +68,4 @@ done
 echo "$html</table></body></html>" > ../reports/report.html
 
 xdg-open ../reports/report.html
-#cat ../reports/report.html
-#cat ../reports/report.txt
+

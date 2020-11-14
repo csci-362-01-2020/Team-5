@@ -3,5 +3,4 @@ Test if add() Method returns expected result for two positive doubles with value
 public OptionalDouble add(OptionalDouble optionalDoubleToAdd)
 5.7 3.6
 9.3
-test2Output.txt
 TestAdd
