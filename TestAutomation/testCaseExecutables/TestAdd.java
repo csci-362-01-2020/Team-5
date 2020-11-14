@@ -27,7 +27,17 @@ public class TestAdd {
 		
 		OptionalDouble sum = oD.add(oDToAdd);
 		double sumValue = sum.getValue();
+		//String pass = (oracle.getValue() == sumValue) ? "Passed" : "Failed";
+		String pass = (oracle.equals(sum)) ? "Passed" : "Failed";
 		
+		
+		System.out.print(String.valueOf(sumValue) + ";" + pass);
+		
+		
+		
+		
+		
+		/*
 		
 		// send sum to temp file so that script can read it
 		try {
@@ -40,6 +50,10 @@ public class TestAdd {
 		} catch(IOException e) {
 			System.out.println("IO error");
 		}
+		
+		*/
+		
+		
 		
 		
 		
