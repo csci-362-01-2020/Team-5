@@ -1,0 +1,6 @@
+16
+Test if multiply() method returns expected results when given two positive decimal values
+public OptionalDouble multiply(OptionalDouble optionalDoubleToMultiply)
+15.4 207.1
+3189.34
+TestMultiply

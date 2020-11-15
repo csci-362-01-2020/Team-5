@@ -18,16 +18,15 @@ public class TestStringComparator {
                 args = args[0].split(" ");
                 String firstString = args[0];
                 String secondString = args[1];
-		int oracle = (int) args[2];
+		int oracle = Integer.valueOf(args[2]);
 		
                 IgnoreCaseStringComparator comparator = new IgnoreCaseStringComparator();
                 
 		int comparisonResult = comparator.compare(firstString, secondString);
-                String pass = (oracle.equals(product)) ? "Passed" : "Failed";
 		String pass = (Integer.signum(oracle) == Integer.signum(comparisonResult)) ? "Passed" : "Failed";
                 
                 
-                System.out.print(String.valueOf(prodValue) + ";" + pass);
+                System.out.print(String.valueOf(Integer.signum(comparisonResult)) + ";" + pass);
                 
                 
                 
