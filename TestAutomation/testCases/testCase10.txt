@@ -1,0 +1,6 @@
+10
+Test if subtract() Method returns expected result for the subtraction of a very small number from a very large number
+public OptionalDouble subtract(OptionalDouble optionalDoubleToSubtract)
+76246747 0.00035
+76246746.99965
+TestSubtract

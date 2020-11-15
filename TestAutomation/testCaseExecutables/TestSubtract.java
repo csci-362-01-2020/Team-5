@@ -1,5 +1,5 @@
 /*
-** Tests the public OptionalDouble subtract(OptionalDouble optionalDoubleToAdd)
+** Tests the public OptionalDouble subtract(OptionalDouble optionalDoubleToSubtract)
 ** function from OptionalDouble class
 */
 

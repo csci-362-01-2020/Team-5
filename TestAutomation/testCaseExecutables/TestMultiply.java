@@ -1,5 +1,5 @@
 /*
-** Tests the public OptionalDouble multiply(OptionalDouble optionalDoubleToAdd)
+** Tests the public OptionalDouble multiply(OptionalDouble optionalDoubleToMultiply)
 ** function from OptionalDouble class
 */
 

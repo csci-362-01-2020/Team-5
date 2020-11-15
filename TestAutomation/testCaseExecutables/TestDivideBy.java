@@ -1,5 +1,5 @@
 /*
-** Tests the public OptionalDouble multiply(OptionalDouble optionalDoubleToAdd)
+** Tests the public OptionalDouble divideBy(OptionalDouble optionalDoubleToDivideBy)
 ** function from OptionalDouble class
 */
 
