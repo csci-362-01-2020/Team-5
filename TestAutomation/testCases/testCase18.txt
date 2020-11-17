@@ -1,5 +1,5 @@
 18
-Test if multiply() method returns expected result when given 0 as an input
+multiply() method returns correct product when given 0 as an input
 public OptionalDouble multiply(OptionalDouble optionalDoubleToMultiply)
 875.7823 0.0
 0.0

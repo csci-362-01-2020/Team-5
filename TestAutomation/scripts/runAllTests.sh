@@ -67,5 +67,5 @@ done
 #adds closing html tag and stores it all in report.html
 echo "$html</table></body></html>" > ../reports/report.html
 
-xdg-open ../reports/report.html
+xdg-open ../reports/report.html 
 

@@ -1,5 +1,5 @@
 24
-Test if divideBy() method returns expected result when dividing by a number less than 1
+divideBy() method returns correct quotient when dividing by a number less than 1
 public OptionalDouble divideBy(OptionalDouble optionalDoubleToDivideBy)
 52.15 -0.0523
 -997.1319311663

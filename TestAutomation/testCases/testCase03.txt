@@ -1,5 +1,5 @@
 3
-Test if add() Method returns expected result for two very large positive doubles 
+add() Method returns correct sum for two very large positive doubles 
 public OptionalDouble add(OptionalDouble optionalDoubleToAdd)
 99999.99999 123456.789
 223456.78899

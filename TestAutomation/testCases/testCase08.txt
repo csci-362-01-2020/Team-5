@@ -1,5 +1,5 @@
 8
-Test if subtract() Method returns expected result for two negative doubles
+subtract() Method returns correct difference for two negative doubles
 public OptionalDouble subtract(OptionalDouble optionalDoubleToAdd)
 -10.0 -15.7
 5.7

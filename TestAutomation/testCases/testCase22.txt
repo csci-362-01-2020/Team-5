@@ -1,5 +1,5 @@
 22
-Test if divideBy() method returns expected result when second decimal number is larger than the first decimal number
+divideBy() method returns correct quotient when second decimal number is larger than the first decimal number
 public OptionalDouble divideBy(OptionalDouble optionalDoubleToDivideBy)
 15.68 425.2
 0.0368767639

@@ -1,5 +1,5 @@
 15
-Test if compare() method properly compares inputs as strings and not as numbers
+compare() method properly compares inputs as strings and not as numbers
 public int compare(Object object1, Object object2)
 4.0 4
 1

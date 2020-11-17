@@ -1,5 +1,5 @@
 13
-Test if compare() method returns expected result when comparing an alpha-numerically lesser string to an alpha-numerically greater string
+compare() method returns a negative number when comparing an alpha-numerically lesser string to an alpha-numerically greater string
 public int compare(Object object1, Object object2)
 abracadabra alakazam
 -1

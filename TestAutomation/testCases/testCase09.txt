@@ -1,5 +1,5 @@
 9
-Test if subtract() Method returns expected result for two equal-valued doubles
+subtract() Method returns correct difference for two equal-valued doubles
 public OptionalDouble subtract(OptionalDouble optionalDoubleToSubtract)
 1632.097 1632.0970000
 0.0

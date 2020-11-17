@@ -1,5 +1,5 @@
 17
-Test if multiply() method returns expected results when given two decimal numbers, one positive and one negative
+multiply() method returns correct product when given two decimal numbers, one positive and one negative
 public OptionalDouble multiply(OptionalDouble optionalDoubleToMultiply)
 52.485 -2.0034
 -105.148449

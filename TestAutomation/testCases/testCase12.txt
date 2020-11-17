@@ -1,5 +1,5 @@
 12
-Test if compare() method returns expected result for two strings that differ only in punctuation
+compare() method returns 0 for two strings that differ only in punctuation
 public int compare(Object object1, Object object2) 
 abracadabra AbraCAdaBrA
 0

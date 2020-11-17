@@ -1,5 +1,5 @@
 21
-Test if divideBy() method returns expected result when given two similarly sized numbers
+divideBy() method returns correct quotient when given two similarly sized numbers
 public OptionalDouble divideBy(OptionalDouble optionalDoubleToDivideBy)
 148.23 98.2
 1.5094704684

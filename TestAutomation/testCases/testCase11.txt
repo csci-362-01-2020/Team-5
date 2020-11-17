@@ -1,5 +1,5 @@
 11
-Test if compare() method returns expected result for two strings that are identical
+compare() method returns 0 for two strings that are identical
 public int compare(Object object1, Object object2)
 fE4y3h*$--s fE4y3h*$--s
 0
