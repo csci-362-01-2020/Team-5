@@ -1,0 +1,6 @@
+25
+Test if divideBy() method returns expected result when given integer arguments
+public OptionalDouble divideBy(OptionalDouble optionalDoubleToDivideBy)
+5132 2248
+2.2829181495
+TestDivideBy

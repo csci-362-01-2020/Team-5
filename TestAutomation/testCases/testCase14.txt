@@ -1,0 +1,6 @@
+14
+Test if compare() method returns result (and doesn't break) when comparing a string to the empty string
+public int compare(Object object1, Object object2)
+Not_empty ""
+1
+TestStringComparator

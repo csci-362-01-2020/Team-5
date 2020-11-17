@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #create different parts of html template for easy formatting
 htmlOld="<!DOCTYPE html>
@@ -12,8 +12,8 @@ html="<!DOCTYPE html>
 <title>Test Cases</title></head><body><table><h3><tr><th>Test Num</th><th>Req</th><th>Method Tested</th><th>Inputs</th><th>Expected Outputs</th><th>Actual Output</th><th>Test Result</th></h3></tr>"
 
 # compile dependencies
-cd ../testCaseExecutables
-javac -d . FloatingPointFormatter.java OptionalDouble.java 
+cd ./testCaseExecutables
+javac -d . FloatingPointFormatter.java OptionalDouble.java IgnoreCaseStringComparator.java
 
 
 #iterate through each testCase file

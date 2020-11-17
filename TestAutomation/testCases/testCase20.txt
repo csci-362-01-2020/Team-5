@@ -1,0 +1,6 @@
+20
+Test if multiply() method returns expected value when given one very large number and one very small number
+public OptionalDouble multiply(OptionalDouble optionalDoubleToMultiply)
+30536.207 -0.000364
+-11.115179348
+TestMultiply

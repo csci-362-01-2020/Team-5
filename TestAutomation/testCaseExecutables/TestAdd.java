@@ -9,10 +9,15 @@ package org.miradi.utils;
 import java.io.File;
 import java.io.FileWriter;   // Import the FileWriter class
 import java.io.IOException;  // Import the IOException class to handle errors
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 
 public class TestAdd {
 
 	public static void main(String[] args) {
+		
+		DecimalFormat formatter = new DecimalFormat("0.0000000000");
+		formatter.setRoundingMode(RoundingMode.HALF_UP);
 		
 		args = args[0].split(" ");
 		double valueOfDouble = Double.valueOf(args[0]);
@@ -25,8 +30,8 @@ public class TestAdd {
 		
 		OptionalDouble sum = oD.add(oDToAdd);
 		double sumValue = sum.getValue();
-		String pass = (oracle.equals(sum)) ? "Passed" : "Failed";
-		
+		sumValue = Double.valueOf(formatter.format(sumValue));
+		String pass = (oracle.getValue() == Double.valueOf(formatter.format(sum.getValue()))) ? "Passed" : "Failed";
 		
 		System.out.print(String.valueOf(sumValue) + ";" + pass);
 		

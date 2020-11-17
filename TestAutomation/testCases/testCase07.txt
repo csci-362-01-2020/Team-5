@@ -2,5 +2,5 @@
 Test if subtract() Method returns expected result for a larger positive double subtracted from a smaller positive double
 public OptionalDouble subtract(OptionalDouble optionalDoubleToAdd)
 22.8 30.9
-8.1
+-8.1
 TestSubtract

@@ -1,0 +1,6 @@
+23
+Test if divideBy() method returns expected result given two negative numbers
+public OptionalDouble divideBy(OptionalDouble optionalDoubleToDivideBy)
+-5410.5 -24.36
+222.1059113300
+TestDivideBy
