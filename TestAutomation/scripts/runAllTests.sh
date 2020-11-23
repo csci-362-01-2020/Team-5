@@ -7,7 +7,7 @@
 
 #main html
 html="<!DOCTYPE html>
-<html><meta charset="utf-8"><style>body{background-color: white; color: black; font-family: Courier, monospace;}</style><title>Test Cases</title><nav><ul>"
+<html><meta charset="utf-8"><style>body{background-color: black; color: white; font-family: Courier, monospace;} a{color: white}</style><title>Test Cases</title><nav><ul>"
 
 
 #each test case is put in the same temporary string html and transfered
