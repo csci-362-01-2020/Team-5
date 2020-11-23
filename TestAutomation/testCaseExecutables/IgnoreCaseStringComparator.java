@@ -30,7 +30,7 @@ public class IgnoreCaseStringComparator implements Comparator<Object>
 		// orginal code ends
 		
 		
-		/* Code with fault injected (should cause test number 12 to fail) 
+		/* Code with fault injected (doesn't ignore case for comparison) (should cause test number 12 to fail) 
 		return object1.toString().compareTo(object2.toString()); */
 		// faulty code ends 
 	}

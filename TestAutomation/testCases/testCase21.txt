@@ -1,6 +1,6 @@
 21
-divideBy() method returns correct quotient when given two similarly sized numbers
+divideBy() method returns correct quotient when given a number divided by itself
 public OptionalDouble divideBy(OptionalDouble optionalDoubleToDivideBy)
-148.23 98.2
-1.5094704684
+148.23 148.23
+1.0
 TestDivideBy

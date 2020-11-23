@@ -53,7 +53,7 @@ public class OptionalDouble
 		*/ 
 		// correct code ends
 		
-		/* code with fault inserted (makes test 7 fail) */
+		/* code with fault inserted (returns absolute value of difference) (makes test 7 fail) */
 		if (isNonNullAndHasValue(optionalDoubleToSubtract)) {
 		
 			double val = getSafeRawValue() - optionalDoubleToSubtract.getSafeRawValue();
@@ -75,7 +75,7 @@ public class OptionalDouble
 		*/
 		// original code ends
 		
-		/* Code with fault (makes tests 2, 3, 4, and 5 fail */
+		/* Code with fault (rounds sum to nearest integer) (makes tests 2, 3, 4, and 5 fail */
 		int valInt;
 		double val;
 		if (isNonNullAndHasValue(optionalDoubleToAdd)) {
@@ -98,8 +98,16 @@ public class OptionalDouble
 	
 	public OptionalDouble divideBy(OptionalDouble optionalDoubleToDivideBy)
 	{
+		/* Original Correct code
 		if (isNonNullAndHasValue(optionalDoubleToDivideBy) && hasValue())
 			return new OptionalDouble(getRawValue() / optionalDoubleToDivideBy.getRawValue());
+		*/
+		// original code ends
+		
+		/* code with fault (switches dividend and divisor) (tests 22, 23, 24, and 25 fail) */
+		if (isNonNullAndHasValue(optionalDoubleToDivideBy) && hasValue())
+			return new OptionalDouble(optionalDoubleToDivideBy.getRawValue() / getRawValue());
+			
 		
 		return new OptionalDouble();
 	}
