@@ -94,13 +94,13 @@ public class OptionalDouble
 		if (isNonNullAndHasValue(optionalDoubleToMultiply) && hasValue())
 			return new OptionalDouble(optionalDoubleToMultiply.getRawValue() * getRawValue());
 		
-		return new OptionalDouble();
 		*/
 		// correct code ends
 		
-		/* code with fault inserted (makes tests 16, 17, 19, and 20 fail) */
+		/* code with fault inserted (multiplies result by -1) (makes tests 16, 17, 19, and 20 fail) */
 		if (isNonNullAndHasValue(optionalDoubleToMultiply) && hasValue())
 			return new OptionalDouble((-1)*optionalDoubleToMultiply.getRawValue() * getRawValue());
+		// faulty code ends
 		
 		return new OptionalDouble();
 	}
