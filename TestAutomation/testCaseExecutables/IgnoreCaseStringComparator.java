@@ -25,11 +25,13 @@ public class IgnoreCaseStringComparator implements Comparator<Object>
 {
 	public int compare(Object object1, Object object2)
 	{
-		/* Original, CORRECT code 
-		return object1.toString().compareToIgnoreCase(object2.toString()); */
+		 /*Original, CORRECT code */
+		return object1.toString().compareToIgnoreCase(object2.toString()); 
+		// orginal code ends
 		
 		
-		/* Code with fault injected (should cause test number 12 to fail */
-		return object1.toString().compareTo(object2.toString());
+		/* Code with fault injected (should cause test number 12 to fail) 
+		return object1.toString().compareTo(object2.toString()); */
+		// faulty code ends 
 	}
 }

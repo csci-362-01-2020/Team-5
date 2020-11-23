@@ -15,7 +15,6 @@ htmlT="<!DOCTYPE html><html><meta charset="utf-8"><head>"
 
 count=1
 
-cd ..
 cd ./testCaseExecutables
 for testCase in ../testCases/*
 do
@@ -33,6 +32,7 @@ html=$html"</ul></nav><head>"
 #cd ./testCaseExecutables
 #javac -Djava.ext.dirs=./testCaseExecutables
 #javac -d "testCaseExecutables" #FloatingPointFormatter.java OptionalDouble.java IgnoreCaseStringComparator.java
+javac -d . FloatingPointFormatter.java OptionalDouble.java IgnoreCaseStringComparator.java
 count=1
 
 #iterate through each testCase file
@@ -60,11 +60,11 @@ space=" "
 
 args=$inputs$space$oracle$space$outputFile
 
-#testJava="$testExec.java"
+testJava="$testExec.java"
 
 
 #compile and run test executable
-#javac -d 
+javac -d . "$testJava"
 
 #reads test executable output into variable in format "{Actual Output};{Test Result}"
 { read javaOut; }< <(java org.miradi.utils."$testExec" "$args")

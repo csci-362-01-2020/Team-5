@@ -47,17 +47,44 @@ public class OptionalDouble
 	
 	public OptionalDouble subtract(OptionalDouble optionalDoubleToSubtract)
 	{
+		/* original correct code 
 		if (isNonNullAndHasValue(optionalDoubleToSubtract))
 			return new OptionalDouble(getSafeRawValue() - optionalDoubleToSubtract.getSafeRawValue());
+		*/ 
+		// correct code ends
+		
+		/* code with fault inserted (makes test 7 fail) */
+		if (isNonNullAndHasValue(optionalDoubleToSubtract)) {
+		
+			double val = getSafeRawValue() - optionalDoubleToSubtract.getSafeRawValue();
+			// absolute value
+			double valAbsVal = (val < 0) ? (val * -1) : val;
+			return new OptionalDouble(valAbsVal);
+		}
+		
 		
 		return createCopy();
 	}
 
 	public OptionalDouble add(OptionalDouble optionalDoubleToAdd)
 	{ 
+	
+		 /*Original, correct code 
 		if (isNonNullAndHasValue(optionalDoubleToAdd))
 			return new OptionalDouble(getSafeRawValue() + optionalDoubleToAdd.getSafeRawValue()); 
-
+		*/
+		// original code ends
+		
+		/* Code with fault (makes tests 2, 3, 4, and 5 fail */
+		int valInt;
+		double val;
+		if (isNonNullAndHasValue(optionalDoubleToAdd)) {
+			valInt = (int) ( Math.round(getSafeRawValue()) ) + (int) ( Math.round(optionalDoubleToAdd.getSafeRawValue()) );
+			val = valInt + 0.0;
+			return new OptionalDouble(val); 
+		}
+		//  faulty code ends
+		
 		return createCopy();
 	}
 	
