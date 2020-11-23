@@ -1,21 +1,35 @@
+-Miscellaneous
+  *we need to add comments in the test drivers saying what they are testing/explaining how it tests it [necessary]
+  *make sure we have "requirement" part of our test cases perfect (talk about method, DON'T talk about test itself), several people got nailed for it today [necessary]
+  *probably add exception catchers to drivers, he liked when another team did that [optional but easy]
+  *make sure every step in driver is "individual" (convert inputs on separate lines than using them, calculate output on separate line than outputting it) [necessary but easy]
+  *do we need to use the oracles/ or temp/ directory?
+  *script needs to rm old report.html and outputs before it begins! [essential]
+  *we need to put how-to documentation on what he should do when downloading/running (bare minimum a README) [absolutely essential]
+  
+
 -Deliverable #5: inject 5 faults
+  *kinda like typos
+    ..see article from earlier in the semester about mutation testing
+    ..should have some document telling him about where faults go + what they look like + what their effects were
   *make report
   *make pdf
   *document progress on wiki
   *
-  *due 11.24 (one week from Tues)
+  *due 11.24 (due Tues)
 
 
 -Fancy up html?
   *I haven't done any of the html part personally, so idk how hard this would be
   *Some possible changes: background color?, multiple linkable pages?, make test requirements more readable
+    ..Team "Great" (I think) and "Fantastic 4" have really nice looking outputs
   *
   *I feel like since this is what shows up immediately when we run the script, the nicer this looks the better opinion Bowring will have on the rest of our project (bc first impressions)
 
 
---Final report/presentation!!
+--Final report/presentation!!--
   *redo all deliverables for final report, make it look really nice and cohesive
-  *put a ton of stuff on wiki, as if we'd been doing it at each stage
+  *put a TOM of stuff on wiki, as if we'd been doing it at each stage
   *make and practice giving presentation (all have to speak)
   *!!says presentation should be 20 min!!!
     .. with 5 min after for questions (think of questions for other groups for brownie points with Bowring)
