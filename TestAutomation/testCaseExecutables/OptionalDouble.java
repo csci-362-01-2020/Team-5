@@ -90,8 +90,17 @@ public class OptionalDouble
 	
 	public OptionalDouble multiply(OptionalDouble optionalDoubleToMultiply)
 	{
+		/* original correct code
 		if (isNonNullAndHasValue(optionalDoubleToMultiply) && hasValue())
 			return new OptionalDouble(optionalDoubleToMultiply.getRawValue() * getRawValue());
+		
+		return new OptionalDouble();
+		*/
+		// correct code ends
+		
+		/* code with fault inserted (makes tests 16, 17, 19, and 20 fail) */
+		if (isNonNullAndHasValue(optionalDoubleToMultiply) && hasValue())
+			return new OptionalDouble((-1)*optionalDoubleToMultiply.getRawValue() * getRawValue());
 		
 		return new OptionalDouble();
 	}
